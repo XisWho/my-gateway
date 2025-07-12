@@ -12,8 +12,8 @@ import lombok.Setter;
 @Setter
 public class HttpRequestWrapper {
 
-    private FullHttpRequest httpRequest;
+    private FullHttpRequest fullHttpRequest;
 
-    private ChannelHandlerContext context;
+    private ChannelHandlerContext ctx;
 
 }

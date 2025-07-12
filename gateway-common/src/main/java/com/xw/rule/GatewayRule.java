@@ -15,8 +15,6 @@ import java.util.Set;
 @Setter
 public class GatewayRule implements Comparable<GatewayRule>, Serializable {
 
-	private static final long serialVersionUID = 2540640682854847548L;
-	
 	//	规则ID 全局唯一
 	private String id;
 	

@@ -1,5 +1,7 @@
 package com.xw.gateway.context;
 
+import com.xw.service.ServiceInvoker;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
@@ -10,6 +12,10 @@ public abstract class AttributeKey<T> {
 
     //	到负责均衡之前，要通过具体的服务，获取对应的服务实例列表
     public static final AttributeKey<Set<String>> MATCH_ADDRESS = create(Set.class);
+
+    public static final AttributeKey<ServiceInvoker> HTTP_INVOKER = create(ServiceInvoker.class);
+
+    public static final AttributeKey<ServiceInvoker> DUBBO_INVOKER = create(ServiceInvoker.class);
 
     static {
         namedMap.put("MATCH_ADDRESS", MATCH_ADDRESS);
