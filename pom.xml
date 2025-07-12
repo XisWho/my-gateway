@@ -24,6 +24,7 @@
         <jsonpath.version>2.4.0</jsonpath.version>
         <jackson.version>2.12.3</jackson.version>
         <fastjson.verson>1.2.76</fastjson.verson>
+        <caffeine.version>2.8.5</caffeine.version>
         <async-http-client.version>2.0.37</async-http-client.version>
 
         <maven.compiler.source>8</maven.compiler.source>
@@ -112,6 +113,13 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
                 <version>${fastjson.verson}</version>
+            </dependency>
+
+            <!--Cache-->
+            <dependency>
+                <groupId>com.github.ben-manes.caffeine</groupId>
+                <artifactId>caffeine</artifactId>
+                <version>${caffeine.version}</version>
             </dependency>
 
             <!-- 请求客户端包 -->

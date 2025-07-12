@@ -70,6 +70,12 @@
             <artifactId>json-path</artifactId>
         </dependency>
 
+        <!-- 缓存 -->
+        <dependency>
+            <groupId>com.github.ben-manes.caffeine</groupId>
+            <artifactId>caffeine</artifactId>
+        </dependency>
+
         <!-- 请求客户端包 -->
         <dependency>
             <groupId>org.asynchttpclient</groupId>

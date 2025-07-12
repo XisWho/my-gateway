@@ -1,4 +1,4 @@
-package com.xw.gateway.Analyzer;
+package com.xw.gateway.analyzer;
 
 import com.xw.exception.PathNoMatchedException;
 import com.xw.rule.GatewayRule;

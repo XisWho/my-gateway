@@ -45,7 +45,7 @@ public class GatewayRule implements Comparable<GatewayRule>, Serializable {
 	 * @return
 	 */
 	public FilterConfig getFilterConfig(String id){
-		for(FilterConfig filterConfig : filterConifgs) {
+		for (FilterConfig filterConfig : filterConifgs) {
 			if(filterConfig.getId().equalsIgnoreCase(id)) {
 				return filterConfig;
 			}

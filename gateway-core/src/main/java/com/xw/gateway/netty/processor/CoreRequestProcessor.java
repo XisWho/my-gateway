@@ -1,6 +1,6 @@
 package com.xw.gateway.netty.processor;
 
-import com.xw.gateway.Analyzer.RequestAnalyzer;
+import com.xw.gateway.analyzer.RequestAnalyzer;
 import com.xw.gateway.context.GatewayContext;
 import com.xw.gateway.netty.context.HttpRequestWrapper;
 import io.netty.channel.ChannelHandlerContext;
