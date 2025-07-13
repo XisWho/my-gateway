@@ -1,8 +1,6 @@
 package com.xw.gateway.service;
 
-import com.xw.service.ServiceDefinition;
-import com.xw.rule.GatewayRule;
-import com.xw.service.ServiceInstance;
+import com.xw.gateway.rule.GatewayRule;
 
 import java.util.Iterator;
 import java.util.Set;

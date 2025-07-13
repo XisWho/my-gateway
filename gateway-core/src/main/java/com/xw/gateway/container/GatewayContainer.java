@@ -1,6 +1,6 @@
 package com.xw.gateway.container;
 
-import com.xw.constants.BufferTypeConstant;
+import com.xw.gateway.constants.BufferTypeConstant;
 import com.xw.gateway.config.GatewayConfig;
 import com.xw.gateway.netty.NettyHttpServer;
 import com.xw.gateway.netty.processor.CoreRequestProcessor;

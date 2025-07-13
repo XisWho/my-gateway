@@ -1,6 +1,6 @@
 package com.xw.gateway.config;
 
-import com.xw.util.PropertiesUtils;
+import com.xw.gateway.util.PropertiesUtils;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;

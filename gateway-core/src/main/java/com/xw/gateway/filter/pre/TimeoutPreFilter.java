@@ -1,7 +1,6 @@
 package com.xw.gateway.filter.pre;
 
-import com.xw.constants.Protocol;
-import com.xw.gateway.context.AttributeKey;
+import com.xw.gateway.constants.Protocol;
 import com.xw.gateway.context.Context;
 import com.xw.gateway.context.GatewayContext;
 import com.xw.gateway.context.GatewayRequest;

@@ -2,8 +2,8 @@ package com.xw.gateway.context;
 
 import com.google.common.collect.Lists;
 import com.jayway.jsonpath.JsonPath;
-import com.xw.constants.BasicConstant;
-import com.xw.util.TimeUtil;
+import com.xw.gateway.constants.BasicConstant;
+import com.xw.gateway.util.TimeUtil;
 import io.netty.buffer.ByteBuf;
 import io.netty.handler.codec.http.*;
 import lombok.Getter;

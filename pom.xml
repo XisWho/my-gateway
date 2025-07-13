@@ -11,6 +11,10 @@
     <modules>
         <module>gateway-core</module>
         <module>gateway-common</module>
+        <module>gateway-client</module>
+        <module>gateway-discovery</module>
+        <module>gateway-discovery/gateway-discovery-api</module>
+        <module>gateway-discovery/gateway-discovery-etcd</module>
     </modules>
 
     <properties>
@@ -26,6 +30,7 @@
         <fastjson.verson>1.2.76</fastjson.verson>
         <caffeine.version>2.8.5</caffeine.version>
         <async-http-client.version>2.0.37</async-http-client.version>
+        <spring-boot.version>2.3.2.RELEASE</spring-boot.version>
 
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>

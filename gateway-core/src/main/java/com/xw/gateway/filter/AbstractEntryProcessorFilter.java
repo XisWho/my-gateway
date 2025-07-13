@@ -1,11 +1,11 @@
 package com.xw.gateway.filter;
 
 import com.github.benmanes.caffeine.cache.Cache;
-import com.xw.constants.BasicConstant;
-import com.xw.rule.GatewayRule.FilterConfig;
+import com.xw.gateway.constants.BasicConstant;
+import com.xw.gateway.rule.GatewayRule.FilterConfig;
 import com.xw.gateway.cache.DefaultCacheManager;
 import com.xw.gateway.context.Context;
-import com.xw.util.JSONUtil;
+import com.xw.gateway.util.JSONUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 

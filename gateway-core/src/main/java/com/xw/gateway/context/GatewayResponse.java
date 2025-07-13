@@ -1,8 +1,8 @@
 package com.xw.gateway.context;
 
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import com.xw.constants.ResponseCode;
-import com.xw.util.JSONUtil;
+import com.xw.gateway.constants.ResponseCode;
+import com.xw.gateway.util.JSONUtil;
 import io.netty.handler.codec.http.*;
 import lombok.Data;
 import org.asynchttpclient.Response;

@@ -1,6 +1,6 @@
 package com.xw.gateway.context;
 
-import com.xw.rule.GatewayRule;
+import com.xw.gateway.rule.GatewayRule;
 import io.netty.channel.ChannelHandlerContext;
 
 import java.util.function.Consumer;

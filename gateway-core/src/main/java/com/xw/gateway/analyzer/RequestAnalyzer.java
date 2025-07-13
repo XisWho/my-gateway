@@ -1,20 +1,20 @@
 package com.xw.gateway.analyzer;
 
-import com.xw.exception.PathNoMatchedException;
-import com.xw.rule.GatewayRule;
-import com.xw.service.ServiceDefinition;
-import com.xw.constants.BasicConstant;
-import com.xw.constants.Protocol;
-import com.xw.constants.RequestConstant;
-import com.xw.constants.ResponseCode;
-import com.xw.exception.ResponseException;
-import com.xw.exception.NotFoundException;
+import com.xw.gateway.exception.PathNoMatchedException;
+import com.xw.gateway.rule.GatewayRule;
+import com.xw.gateway.service.ServiceDefinition;
+import com.xw.gateway.constants.BasicConstant;
+import com.xw.gateway.constants.Protocol;
+import com.xw.gateway.constants.GatewayConstant;
+import com.xw.gateway.constants.ResponseCode;
+import com.xw.gateway.exception.ResponseException;
+import com.xw.gateway.exception.NotFoundException;
 import com.xw.gateway.context.AttributeKey;
 import com.xw.gateway.context.GatewayContext;
 import com.xw.gateway.context.GatewayRequest;
 import com.xw.gateway.service.DynamicServiceConfigManager;
-import com.xw.service.ServiceInvoker;
-import com.xw.util.AntPathMatcher;
+import com.xw.gateway.service.ServiceInvoker;
+import com.xw.gateway.util.AntPathMatcher;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.http.*;
 import org.apache.commons.lang3.StringUtils;
@@ -79,7 +79,7 @@ public class RequestAnalyzer {
 
         HttpHeaders headers = fullHttpRequest.headers();
         //	从header头获取必须要传入的关键属性 uniqueId
-        String uniqueId = headers.get(RequestConstant.UNIQUE_ID);
+        String uniqueId = headers.get(GatewayConstant.UNIQUE_ID);
         if(StringUtils.isBlank(uniqueId)) {
             throw new ResponseException(ResponseCode.REQUEST_PARSE_ERROR_NO_UNIQUEID);
         }

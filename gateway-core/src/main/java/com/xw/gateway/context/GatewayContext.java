@@ -1,7 +1,7 @@
 package com.xw.gateway.context;
 
-import com.xw.rule.GatewayRule;
-import com.xw.util.AssertUtil;
+import com.xw.gateway.rule.GatewayRule;
+import com.xw.gateway.util.AssertUtil;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.util.ReferenceCountUtil;
 

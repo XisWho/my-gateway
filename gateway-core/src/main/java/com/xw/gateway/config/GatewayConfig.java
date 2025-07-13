@@ -1,6 +1,6 @@
 package com.xw.gateway.config;
 
-import com.xw.constants.BufferTypeConstant;
+import com.xw.gateway.constants.BufferTypeConstant;
 import lombok.Getter;
 import lombok.Setter;
 
