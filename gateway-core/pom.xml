@@ -13,6 +13,8 @@
 
     <properties>
         <gateway-common.version>1.0-SNAPSHOT</gateway-common.version>
+        <gateway-discovery-api.version>1.0-SNAPSHOT</gateway-discovery-api.version>
+        <gateway-discovery-etcd.version>1.0-SNAPSHOT</gateway-discovery-etcd.version>
 
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
@@ -88,6 +90,17 @@
             <artifactId>async-http-client-netty-utils</artifactId>
         </dependency>
 
+        <!-- 注册中心 -->
+        <dependency>
+            <groupId>com.xw</groupId>
+            <artifactId>gateway-discovery-api</artifactId>
+            <version>${gateway-discovery-api.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.xw</groupId>
+            <artifactId>gateway-discovery-etcd</artifactId>
+            <version>${gateway-discovery-etcd.version}</version>
+        </dependency>
     </dependencies>
 
 </project>

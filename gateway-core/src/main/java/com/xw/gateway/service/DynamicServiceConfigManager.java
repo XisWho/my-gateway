@@ -47,6 +47,10 @@ public class DynamicServiceConfigManager {
         set.add(serviceInstance);
     }
 
+    public void addServiceInstance(String uniqueId, Set<ServiceInstance> serviceInstanceSet) {
+        serviceInstanceMap.put(uniqueId, serviceInstanceSet);
+    }
+
     public void updateServiceInstance(String uniqueId, ServiceInstance serviceInstance) {
         Set<ServiceInstance> set = serviceInstanceMap.get(uniqueId);
         Iterator<ServiceInstance> it = set.iterator();
